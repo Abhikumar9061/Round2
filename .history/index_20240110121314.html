@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head content remains the same -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <!-- Nav content remains the same -->
+      </nav>
+
+      <div class="form-box">
+        <div class="login-container" id="login">
+          <div class="top">
+            <span
+              >Don't have an account?
+              <a href="#" onclick="register()">Sign Up</a></span
+            >
+            <header>Login</header>
+          </div>
+          <form action="/login" method="POST">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username"
+                name="username"
+              />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Password"
+                name="password"
+              />
+              <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="Sign In" />
+            </div>
+          </form>
+          <!-- Additional login form content (checkbox, forgot password) remains the same -->
+        </div>
+
+        <div class="register-container" id="register">
+          <div class="top">
+            <span
+              >Have an account? <a href="#" onclick="login()">Login</a></span
+            >
+            <header>Sign Up</header>
+          </div>
+          <form action="/register" method="POST">
+            <div class="two-forms">
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="Firstname"
+                  name="firstname"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="Lastname"
+                  name="lastname"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Email"
+                name="email"
+              />
+              <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Password"
+                name="password"
+              />
+              <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="Register" />
+            </div>
+          </form>
+          <!-- Additional registration form content (checkbox, terms & conditions) remains the same -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts and closing tags remain the same -->
+  </body>
+</html>
